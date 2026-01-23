@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hermen Steven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo">Hermen Steven</div>
+        <nav>
+            <a data-section="0" href="#inicio">Inicio</a>
+            <a data-section="1" href="#titulo_somos">Quiénes Somos</a>
+            <a data-section="2" href="#servicios">Servicios</a>
+            <a data-section="3" href="#explorar">Explorar</a>
+            <a data-section="4" href="#contacto">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= WRAPPER ================= -->
+<main class="sections">
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+    <video autoplay muted loop playsinline>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Tu presencia digital empieza aquí</h1>
+        <p>Diseñamos sitios que venden, posicionan y crecen contigo</p>
+    </div>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section class="info" id="titulo_somos">
+    <br></br>
+    <br></br>
+    <br></br>
+    <h2 >Quiénes Somos</h2>
+    <br></br>
+    <p>
+        Somos un estudio enfocado en crear presencia digital con propósito.
+        No hacemos “páginas web”, construimos herramientas que trabajan para tu negocio
+        las 24 horas.
+        <br><br>
+        Entendemos que cada proyecto representa una inversión, una idea y una meta.
+        Por eso diseñamos sitios claros, atractivos y estratégicos, pensados para generar
+        confianza, credibilidad y resultados reales.
+        <br><br>
+        Nos involucramos en tu visión para traducirla en una experiencia digital sólida,
+        moderna y preparada para crecer.
+    </p>
+</section>
+
+
+<section class="value-section" id="servicios">
+    <div class="value-header">
+        <h2 id="titulo_servicios">Contribuye a tu negocio</h2>
+        <p>
+            Presencia y expansión digital
+        </p>
+    </div>
+
+    <div class="value-grid">
+
+        <div class="value-card">
+            <h3>Creación</h3>
+            <p>
+                Desarrollamos sitios de acuerdo a tu contexto y necesidades para escalar tu negocio.
+            </p>
+            <a href="#contacto">Ver más <span>→</span></a>
+        </div>
+
+        <div class="value-card">
+            <h3>Mantenimiento del Sitio</h3>
+            <p>
+                Tu negocio está en constante movimiento con eventos, promociones e innovaciones,
+                nosotros nos encargamos de manternerlo actualizado.
+            </p>
+            <a href="#contacto">Ver más <span>→</span></a>
+        </div>
+
+        <div class="value-card">
+            <h3>Publicidad para el Sitio</h3>
+            <p>
+                Lo que ofrece tu negocio en movimiento tiene que salir a la luz, nosotros nos encargamos
+                de hacer la publicidad de tu negocio.
+            </p>
+            <a href="#contacto">Ver más <span>→</span></a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CARRUSEL -->
+<section class="carousel-section" id="explorar">
+    <h2>Explorar</h2>
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+
+        <div class="carousel-viewport">
+            <div class="carousel-track">
+
+                <a href="sitio_1/index.html" class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="images/panaderia.jpg">
+                    </div>
+                    <div class="carousel-text">Panadería La Gordita</div>
+                </a>
+
+                <a href="sitio_2/index.html" class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="images/taquería.jpg">
+                    </div>
+                    <div class="carousel-text">Taquería El Buen Taco</div>
+                </a>
+
+                <a href="#contacto" class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="images/mano.png">
+                    </div>
+                    <div class="carousel-text">TU NEGOCIO</div>
+                </a>
+
+            </div>
+        </div>
+
+        <button class="next">&#10095;</button>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact">
+    <h2 id="contacto">Contacto</h2>
+    <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+    </form>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

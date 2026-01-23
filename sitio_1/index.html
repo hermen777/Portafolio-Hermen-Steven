@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panadería Artesanal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="logo">Panadería Artesanal</div>
+    <nav>
+      <a href="#about">Nosotros</a>
+      <a href="#menu">Menú</a>
+      <a href="#promos">Promociones</a>
+      <a href="#events">Eventos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO VIDEO -->
+<section class="hero" id="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="video/postre_fondo.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay" id="heroOverlay">
+    <h1>Pan hecho con tiempo,<br>como antes</h1>
+    <p>Tradición, sabor y horno todos los días</p>
+    <div class="scroll-indicator">↓</div>
+  </div>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <h2>Quiénes somos</h2>
+      <p>
+        Somos una panadería artesanal que cree en los procesos lentos,
+        en las recetas heredadas y en el valor de hacer las cosas bien.
+      </p>
+      <p>
+        Cada día horneamos pan dulce, pan salado y repostería con ingredientes
+        frescos y un profundo respeto por nuestro oficio.
+      </p>
+    </div>
+
+    <div class="about-images">
+      <div class="img-box" style="background-image:url('images/cuernitos.jpg')"></div>
+      <div class="img-box" style="background-image:url('images/magdalenas.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MENÚ -->
+<section class="section menu" id="menu">
+  <h2>Nuestros productos</h2>
+
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-img" style="background-image:url('images/panes_muchos.jpg')"></div>
+      <h3>Pan dulce</h3>
+      <p>Variedad diaria recién horneada</p>
+      <span>$15 MXN</span>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-img" style="background-image:url('images/bolillo_dulce.jpg')"></div>
+      <h3>Bolillo</h3>
+      <p>Clásico y crujiente</p>
+      <span>$5 MXN</span>
+    </div>
+
+    <div class="menu-card">
+      <div class="menu-img" style="background-image:url('images/pastel.jpg')"></div>
+      <h3>Pasteles</h3>
+      <p>Eventos y ocasiones especiales</p>
+      <span>Desde $250 MXN</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROMOCIONES -->
+<section class="section promo-section" id="promos">
+  <div class="promo-card">
+    <div class="promo-content">
+      <h2>Promociones</h2>
+      <p>
+        Descubre nuestras promociones especiales por temporada.
+        Pan recién horneado, combos y sorpresas pensadas para compartir.
+      </p>
+      <a href="#" class="promo-btn">Ver promociones</a>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTOS -->
+<section class="section event-section" id="events">
+  <div class="event-card">
+    <div class="event-content">
+      <h2>Eventos y pedidos especiales</h2>
+      <p>
+        Acompañamos tus momentos importantes con pan y repostería hecha a medida.
+        Bodas, cumpleaños, reuniones y celebraciones.
+      </p>
+      <a href="#" class="event-btn">Ver eventos</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section contact" id="contact">
+  <h2>Contacto</h2>
+
+  <form class="contact-form" id="contactForm">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="correo" placeholder="Correo" required>
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<a href="https://wa.me/5210000000000" class="whatsapp" target="_blank">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
