@@ -12,6 +12,12 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -420,6 +426,7 @@ button {
         grid-column: span 4;
     }
 }
+
 .about-split {
     display: grid;
     gap: 80px;
@@ -544,5 +551,91 @@ button {
 
     .explore-card {
         grid-column: span 4;
+    }
+}
+
+@media (max-width: 767px) {
+    .tech-drift::after {
+        inset: -5%;
+        filter: blur(30px);
+    }
+}
+
+@media (max-width: 767px) {
+    .grid,
+    .about-split,
+    .value-split,
+    .explore-grid {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+.value-text {
+    grid-column: span 5;
+}
+
+.value-cards {
+    grid-column: span 7;
+}
+
+.value-split {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 80px;
+    padding: 160px 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+section {
+    overflow-x: hidden;
+}
+
+img,
+video,
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= MOBILE: VALUE CARDS SIMPLE ================= */
+
+@media (max-width: 767px) {
+
+    /* Asegura orden vertical */
+    .value-split {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Texto primero */
+    .value-text {
+        order: 1;
+        width: 100%;
+    }
+
+    /* Cards debajo */
+    .value-cards {
+        order: 2;
+        width: 100%;
+        max-width: 360px; /* ancho controlado */
+        margin-top: 32px;
+        overflow: hidden;
+    }
+
+    /* Cards más angostas */
+    .value-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .value-card {
+        backdrop-filter: blur(12px);
     }
 }
